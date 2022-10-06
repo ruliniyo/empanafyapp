@@ -1,0 +1,50 @@
+Modelo Empanafy
+===============
+
+- Cancion
+- Compositor
+- Genero
+- Interprete
+
+1.- Cancion
+============
+
+- ISMN				string
+- titulo			string
+- fechaCreacion		Date	
+- interprete		Interprete
+- compositor		Compositor
+- genero			Genero	
+- explicita			boolean
+- instrumental		boolean
+- puntuacion		number
+- duracion			number
+- observaciones		string
+
+2- Compositor
+=============
+
+- codigo            number
+- nombre            string
+- apellidos         string
+- nacionalidad      string
+- fechaNacimiento   Date
+- fechaDefuncion    Date
+
+3- Genero
+=========
+
+- codigo            number
+- nombre            string
+- observaciones     string
+	
+4.- Interprete
+==============
+
+- codigo            number
+- nombre            string
+- apellidos         string
+- nacionalidad      string
+- fechaNacimiento   Date
+- fechaDefuncion    Date
+	
