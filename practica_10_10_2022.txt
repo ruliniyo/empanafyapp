@@ -1,0 +1,30 @@
+- Vamos a crear un servicio para traernos Compositores e Interpretes del backend. 
+Empezaremos con los compositores...
+
+las URLs son:
+
+http://localhost:8080/compositores
+http://localhost:8080/interpretes
+
+PASOS A SEGUIR
+==============
+
+0.- Inclusión de HttpClientModule
+
+- si estuvierais haciendo el proyecto desde cero por vuestra cuenta, el primar paso sería incorporar el módulo
+  HttpClientModule en el módulo principal. Si no lo hacemos no dispondremos de los objetos y servicios necesarios
+  para poder interactuar con un backend.
+
+1.- Creamos el servicio CompositorService
+
+- dentro de este servicio crearemos el método getAll() a imagen y semejanza de los que tenemos en GeneroService
+
+2.- Creamos el componente ListadoCompositoresComponent a imagen y semejanza de ListadoGenerosComponent.
+
+- si sobrara tiempo, en vez de mostrar {{compositores | json}} en el HTML podríamos pintar una tabla.
+- nos hemos de acordar de colocar este componente en el componente principal. Si tuvieramos tiempo podríamos montar
+  el sistema de rutas, basándonos en el proyecto HelloWorld.
+
+
+
+
