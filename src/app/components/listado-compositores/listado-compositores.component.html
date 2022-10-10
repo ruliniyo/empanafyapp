@@ -1,0 +1,21 @@
+<h2>Listado de Compositores</h2>
+<table class="empanatable" *ngIf="compositores">
+    <thead>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Nacionalidad</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Fecha de Defunción</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let compositor of compositores">
+            <td>{{compositor.codigo}}</td>
+            <td>{{compositor.nombre}}</td>
+            <td>{{compositor.apellidos}}</td>
+            <td>{{compositor.nacionalidad}}</td>
+            <td>{{compositor.fechaNacimiento | date:'dd/MM/yyyy'}}</td>
+            <td>{{compositor.fechaDefuncion | date: 'dd/MM/yyyy'}}</td>
+        </tr>
+    </tbody>
+</table>

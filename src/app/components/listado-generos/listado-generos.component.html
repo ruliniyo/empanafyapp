@@ -1,2 +1,17 @@
 <h2>Listado de Géneros</h2>
-{{generos | json}}
+<table class="empanatable" *ngIf="generos">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Género</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let genero of generos">
+            <td>{{genero.codigo}}</td>
+            <td>{{genero.nombre}}</td>
+            <td>{{genero.observaciones}}</td>
+        </tr>
+    </tbody>
+</table>

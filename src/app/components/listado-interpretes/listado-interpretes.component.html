@@ -1,0 +1,21 @@
+<h2>Listado de Intérpretes</h2>
+<table class="empanatable" *ngIf="interpretes">
+    <thead>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Nacionalidad</th>
+        <th>Fecha de Nacimiento</th>
+        <th>Fecha de Defunción</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let interprete of interpretes">
+            <td>{{interprete.codigo}}</td>
+            <td>{{interprete.nombre}}</td>
+            <td>{{interprete.apellidos}}</td>
+            <td>{{interprete.nacionalidad}}</td>
+            <td>{{interprete.fechaNacimiento | date:'dd/MM/yyyy'}}</td>
+            <td>{{interprete.fechaDefuncion | date: 'dd/MM/yyyy'}}</td>
+        </tr>
+    </tbody>
+</table>

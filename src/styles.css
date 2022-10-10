@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+table{
+    width: 100%;
+}
+
+.empanatable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.empanatable td, .empanatable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.empanatable tr:nth-child(even){background-color: #f2f2f2;}
+  
+.empanatable tr:hover {background-color: #ddd;}
+  
+.empanatable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}

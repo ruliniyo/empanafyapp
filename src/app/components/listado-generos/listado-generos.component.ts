@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { Genero } from 'src/app/model/genero';
-import { GeneroService } from 'src/app/services/genero.service';
+import { Component, OnInit }  from '@angular/core';
+import { Genero }             from 'src/app/model/genero';
+import { GeneroService }      from 'src/app/services/genero.service';
 
 @Component({
   selector: 'app-listado-generos',
@@ -17,7 +16,6 @@ export class ListadoGenerosComponent implements OnInit {
   ngOnInit() {
     let observable = this.generoService.getAll();
     observable.subscribe(datos => {
-      console.log(datos);
       this.generos = datos;
     });
   }
