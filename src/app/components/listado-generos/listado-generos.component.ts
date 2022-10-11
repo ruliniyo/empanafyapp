@@ -14,7 +14,9 @@ export class ListadoGenerosComponent implements OnInit {
   constructor(private generoService: GeneroService) { }
 
   ngOnInit() {
+
     let observable = this.generoService.getAll();
+    
     observable.subscribe(datos => {
       this.generos = datos;
     });

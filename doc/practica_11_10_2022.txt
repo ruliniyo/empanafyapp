@@ -1,0 +1,36 @@
+- Actualmente disponemos de servicios y compontes para mostrar listados de compositores, interpretes y géneros.
+
+Para cada una de estas entidades del modelo disponemos de:
+
+- un servicio con un método para obtener un listado del backend.
+- un componente para mostrar tabla.
+- un path en AppRoutingModule
+- un link en el menú de navegacion en "app.component.html"
+
+PRACTICA
+========
+
+- Crear todo lo necesario para podernos traer canciones del backend.
+la URLs es:
+
+http://localhost:8080/canciones
+
+
+PASOS A SEGUIR
+==============
+
+1.- Creamos el servicio CancionService
+
+- dentro de este servicio crearemos el método getAll() a imagen y semejanza de los que ya están hechos.
+
+2.- Creamos el componente ListadoCancionesComponent a imagen y semejanza de los que ya están hechos.
+
+Atención! No tendremos que mostrar todas las propiedades de una canción. Sólo las más importantes.
+
+3.- Creamos el path en AppRoutesModule
+
+4.- Creamos el link en el menú de navegación de "app.component.html"
+
+
+
+
