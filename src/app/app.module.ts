@@ -8,6 +8,8 @@ import { ListadoGenerosComponent } from './components/listado-generos/listado-ge
 import { ListadoInterpretesComponent } from './components/listado-interpretes/listado-interpretes.component';
 import { ListadoCompositoresComponent } from './components/listado-compositores/listado-compositores.component';
 import { HomeComponent } from './components/home/home.component';
+import { ListadoCancionesComponent } from './components/listado-canciones/listado-canciones.component';
+import { FichaCancionComponent } from './components/ficha-cancion/ficha-cancion.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { HomeComponent } from './components/home/home.component';
     ListadoGenerosComponent,
     ListadoInterpretesComponent,
     ListadoCompositoresComponent,
-    HomeComponent
+    HomeComponent,
+    ListadoCancionesComponent,
+    FichaCancionComponent
   ],
   imports: [
     BrowserModule,

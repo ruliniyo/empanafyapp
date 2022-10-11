@@ -1,0 +1,13 @@
+<div *ngIf="cancion">
+    <h2>Ficha Cancion</h2>
+    <p>Código:  {{cancion.ismn}}</p>
+    <p>La cancion {{cancion.titulo}} fue compuesta por {{cancion.compositor.nombre}} {{cancion.compositor.apellidos}}.</p>
+    <p>Duración: {{cancion.duracion}}</p>
+    <p>Ecplícita: {{cancion.explicita}}</p>
+    <h3>Compositor</h3>
+    <p>Nombre: {{cancion.compositor.nombre}} {{cancion.compositor.nombre}}</p>
+    <p>Nacionalidad: {{cancion.compositor.nacionalidad}}</p>
+    <h3>Intérprete</h3>
+    <p>Nombre: {{cancion.interprete.nombre}} {{cancion.interprete.nombre}}</p>
+    <p>Nacionalidad: {{cancion.interprete.nacionalidad}}</p>
+</div>

@@ -4,7 +4,7 @@ import { Interprete }               from "./interprete";
 
 export class Cancion{
 
-    ISMN:string;
+    ismn:string;
     titulo:string;
     fechaCreacion:Date;
     interprete:Interprete;
