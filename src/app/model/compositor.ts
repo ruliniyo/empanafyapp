@@ -7,10 +7,11 @@ export class Compositor{
     fechaNacimiento:Date;
     fechaDefuncion:Date;
     biografia:string;
-
+/*
     constructor(codigo:number, nombre:string, apellidos:string){
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellidos = apellidos;
     }
+*/
 }
