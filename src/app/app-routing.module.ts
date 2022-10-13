@@ -1,5 +1,6 @@
 import { NgModule }                       from '@angular/core';
 import { RouterModule, Routes }           from '@angular/router';
+import { AltaInterpreteComponent }        from './components/alta-interprete/alta-interprete.component';
 import { FichaCancionComponent }          from './components/ficha-cancion/ficha-cancion.component';
 import { FichaCompositorComponent }       from './components/ficha-compositor/ficha-compositor.component';
 import { HomeComponent }                  from './components/home/home.component';
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:"listado-compositores", component: ListadoCompositoresComponent},
   {path:"listado-interpretes", component: ListadoInterpretesComponent},
   {path:"listado-canciones", component: ListadoCancionesComponent},
+  {path:"alta-interprete", component: AltaInterpreteComponent},
   {path:"ficha-cancion/:ismn", component: FichaCancionComponent},
   {path:"ficha-compositor/:codigo", component: FichaCompositorComponent}
 ];

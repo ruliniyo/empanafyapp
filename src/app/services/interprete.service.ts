@@ -12,4 +12,9 @@ export class InterpreteService {
   getAll(){
     return this.httpClient.get<Interprete[]>("http://localhost:8080/interpretes");
   }
+
+  crear(interprete:Interprete){
+    return this.httpClient.post<Interprete>("http://localhost:8080/interpretes", interprete);
+  }
+
 }

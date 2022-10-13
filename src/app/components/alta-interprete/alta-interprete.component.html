@@ -1,0 +1,10 @@
+<h2>Alta de Intérprete</h2>
+Código: <input type="number" [(ngModel)]="interprete.codigo"/><br>
+Nombre: <input type="text" [(ngModel)]="interprete.nombre"/><br>
+Apellidos: <input type="text" [(ngModel)]="interprete.apellidos"/><br>
+Nacionalidad: <input type="text" [(ngModel)]="interprete.nacionalidad"/><br>
+Fecha de Nacimiento: <input type="date" [(ngModel)]="interprete.fechaNacimiento"/><br>
+Fecha de Defunción: <input type="date" [(ngModel)]="interprete.fechaDefuncion"/><br>
+<button (click)="crear()">CREAR</button>
+{{interprete | json}}
+

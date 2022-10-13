@@ -1,0 +1,29 @@
+PASOS PARA CREAR UN FORMULARIO SENCILLO
+=======================================
+
+********************************************************************
+ 
+ I M P O R T A N T E
+
+
+ Para el tipo de formulario que vamos a hacer necesitamos importar 
+ el módulo "FormsModule" dentro del "AppModule".
+
+ Si no lo hacemos, no funcionarán los controles del HTML5, como por ejemplo:
+
+ <input type="text" [(ngModel)]="nombre"/>
+
+
+*********************************************************************
+
+- Vamos a crear un formulario para dar de alta Interpretes. Es el ejemplo más sencillo.
+
+- Básicamente se van a necesitar tres cosas:
+
+1.- Un nuevo método de servicio (obviamente en InterpreteService) que se encargará de hacer una petición HTTP con el método POST al servidor, para crear un Intérprete.
+
+2.- Un nuevo componente específico para el formulario de alta de Interprete. 
+
+    - Todos nuestros componentes con formulario se llamarán AltaXXXXXXComponent. (AltaInterpreteComponent, AltaGeneroComponent, etc..)
+    
+3.- No nos olvidemos de añadir la ruta en "AppRoutingModule" ni el link en el menú del "app-component.html"

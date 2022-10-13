@@ -1,0 +1,15 @@
+GRANDES TEMAS PENDIENTES
+========================
+
+1.- Formularios
+2.- Formularios Reactivos (ver ejemplo)
+
+3.- Comunicación entre componentes
+
+    - padre -> hijos
+    - hijo -> padre
+    - entre 'sibilings'
+
+4.- Componentes de Material
+
+5.- Testing
