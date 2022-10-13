@@ -8,6 +8,8 @@ import { CancionService } from 'src/app/services/cancion.service';
   templateUrl: './ficha-cancion.component.html',
   styleUrls: ['./ficha-cancion.component.css']
 })
+
+// TODO2
 export class FichaCancionComponent implements OnInit {
 
   cancion:Cancion = undefined;
@@ -19,7 +21,7 @@ export class FichaCancionComponent implements OnInit {
 
     this.activatedRoute.params.subscribe(parametros =>{
       
-      let ismn = parametros['ismn'];
+      let ismn = parametros['ismn']; // recogemos a través de su nombre definido en el Path de la ruta...
       
       this.cancionService.getByIsmn(ismn).subscribe(data => {
         this.cancion = data;

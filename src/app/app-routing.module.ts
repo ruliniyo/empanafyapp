@@ -13,6 +13,8 @@ const routes: Routes = [
   {path:"listado-compositores", component: ListadoCompositoresComponent},
   {path:"listado-interpretes", component: ListadoInterpretesComponent},
   {path:"listado-canciones", component: ListadoCancionesComponent},
+
+  // TODO3
   {path:"ficha-cancion/:ismn", component: FichaCancionComponent}
 ];
 

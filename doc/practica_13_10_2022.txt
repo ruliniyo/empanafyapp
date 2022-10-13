@@ -1,0 +1,27 @@
+- Para poder navegar a la ficha de una canción hemos tenido que hacer lo siguiente:
+
+1.- Crear en el servicio CancionService un nuevo método que devuelve una canción a partir de su código.
+
+2.- Crear el componente FichaCancionComponent que se encargará de "pintar" la ficha de la canción.
+
+ - Observemos el constructor. Se inyectan dos cosas:
+
+    a) CancionService: para poder hacer la petición HTTP al sevidor
+    b) ActivatedRoute: para poder recibir el parámetro (el ISMN) enviado desde la lista.
+
+ - El método ngOnInit se encarga de:
+
+    a) Recibir el parámetro (DE FORMA ASÍNCRONA!!!)
+    b) Una vez tiene el perámetro, hacer la petición HTTP
+
+3.- Para poder "pintar" la ficha necesitamos crear una ruta en AppRouterModule. En esa ruta se indicará el parámetro.
+
+4.- Añadir la columna con el botón de navegación en el HTML de "listado-canciones.component.html". El botón llamará a una función que recibirá el código ISMN
+
+5.- En el componente ListadoCancionesComponent hemos de:
+
+    a) Inyectar un "aparato" que se llama Router y nos permite navegar.
+    b) Se define la función "verFicha(ismn:string)" que hará uso del router para navegar a la ficha, pasándole el parámetro
+
+// FIN
+
