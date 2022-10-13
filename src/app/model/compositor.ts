@@ -6,6 +6,7 @@ export class Compositor{
     nacionalidad:string;
     fechaNacimiento:Date;
     fechaDefuncion:Date;
+    biografia:string;
 
     constructor(codigo:number, nombre:string, apellidos:string){
         this.codigo = codigo;
