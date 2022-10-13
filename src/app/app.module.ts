@@ -10,6 +10,7 @@ import { ListadoCompositoresComponent } from './components/listado-compositores/
 import { HomeComponent } from './components/home/home.component';
 import { ListadoCancionesComponent } from './components/listado-canciones/listado-canciones.component';
 import { FichaCancionComponent } from './components/ficha-cancion/ficha-cancion.component';
+import { FichaCompositorComponent } from './components/ficha-compositor/ficha-compositor.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FichaCancionComponent } from './components/ficha-cancion/ficha-cancion.
     ListadoCompositoresComponent,
     HomeComponent,
     ListadoCancionesComponent,
-    FichaCancionComponent
+    FichaCancionComponent,
+    FichaCompositorComponent
   ],
   imports: [
     BrowserModule,

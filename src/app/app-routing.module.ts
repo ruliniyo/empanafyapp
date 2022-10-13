@@ -1,6 +1,7 @@
 import { NgModule }                       from '@angular/core';
 import { RouterModule, Routes }           from '@angular/router';
 import { FichaCancionComponent }          from './components/ficha-cancion/ficha-cancion.component';
+import { FichaCompositorComponent }       from './components/ficha-compositor/ficha-compositor.component';
 import { HomeComponent }                  from './components/home/home.component';
 import { ListadoCancionesComponent }      from './components/listado-canciones/listado-canciones.component';
 import { ListadoCompositoresComponent }   from './components/listado-compositores/listado-compositores.component';
@@ -13,9 +14,8 @@ const routes: Routes = [
   {path:"listado-compositores", component: ListadoCompositoresComponent},
   {path:"listado-interpretes", component: ListadoInterpretesComponent},
   {path:"listado-canciones", component: ListadoCancionesComponent},
-
-  // TODO3
-  {path:"ficha-cancion/:ismn", component: FichaCancionComponent}
+  {path:"ficha-cancion/:ismn", component: FichaCancionComponent},
+  {path:"ficha-compositor/:codigo", component: FichaCompositorComponent}
 ];
 
 @NgModule({

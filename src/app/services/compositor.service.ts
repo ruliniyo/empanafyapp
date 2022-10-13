@@ -12,4 +12,9 @@ export class CompositorService {
   getAll(){
     return this.httpClient.get<Compositor[]>("http://localhost:8080/compositores");
   }
+
+  getByCodigo(codigo:number){
+    return this.httpClient.get<Compositor>("http://localhost:8080/compositores/" + codigo);
+  }
+
 }

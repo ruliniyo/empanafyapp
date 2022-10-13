@@ -8,8 +8,6 @@ import { CancionService } from 'src/app/services/cancion.service';
   templateUrl: './ficha-cancion.component.html',
   styleUrls: ['./ficha-cancion.component.css']
 })
-
-// TODO2
 export class FichaCancionComponent implements OnInit {
 
   cancion:Cancion = undefined;
