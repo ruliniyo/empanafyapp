@@ -10,3 +10,16 @@ que inyectar un "aparato" especial para crear formularios reactivos.
 
 A estas alturas no debería asustarnos el término "inyección". Ya sabemos que esto se
 hace a través del constructor.
+
+3.- En el método ngOnInit creamos el formulario (una variable del tipo FormGroup) que tenemos declarado
+como variable de instancia. Para ello invocamos al método group() al cual le pasamos un JSON con los 
+diferentes controles del formulario (FormControl). Cada FormControl puede tener datos iniciales y una serie de
+validadores (Validator),
+
+4.- En el HTML tenemos que 
+
+a) Englobar todos nuestros controles tipo input en un elemento form con el atributo: [formGroup]="formulario" 
+b) Enlazar cada "input" de nuestro formulario con los controles FormControl.
+
+5.- El botón crear() recoge todos los valores del formulario
+6.- El botón crear solo es clicable cuando el formulario es válido.

@@ -1,6 +1,7 @@
 import { NgModule }                       from '@angular/core';
 import { RouterModule, Routes }           from '@angular/router';
 import { AltaCompositorComponent }        from './components/alta-compositor/alta-compositor.component';
+import { AltaGeneroComponent }            from './components/alta-genero/alta-genero.component';
 import { AltaInterpreteComponent }        from './components/alta-interprete/alta-interprete.component';
 import { FichaCancionComponent }          from './components/ficha-cancion/ficha-cancion.component';
 import { FichaCompositorComponent }       from './components/ficha-compositor/ficha-compositor.component';
@@ -13,6 +14,7 @@ import { ListadoInterpretesComponent }    from './components/listado-interpretes
 const routes: Routes = [
   {path:"home", component: HomeComponent},
   {path:"listado-generos", component: ListadoGenerosComponent},
+  {path:"alta-genero", component: AltaGeneroComponent},
   {path:"listado-compositores", component: ListadoCompositoresComponent},
   {path:"listado-interpretes", component: ListadoInterpretesComponent},
   {path:"listado-canciones", component: ListadoCancionesComponent},

@@ -17,4 +17,8 @@ export class GeneroService {
     return this.httpCliente.get<Genero[]>(URL + "/generos");
   }
 
+  create(genero:Genero){
+    return this.httpCliente.post<Genero>(URL + "/generos", genero);
+  }
+
 }

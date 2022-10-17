@@ -15,6 +15,7 @@ import { FichaCancionComponent }        from './components/ficha-cancion/ficha-c
 import { FichaCompositorComponent }     from './components/ficha-compositor/ficha-compositor.component';
 import { AltaInterpreteComponent }      from './components/alta-interprete/alta-interprete.component';
 import { AltaCompositorComponent } from './components/alta-compositor/alta-compositor.component';
+import { AltaGeneroComponent } from './components/alta-genero/alta-genero.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AltaCompositorComponent } from './components/alta-compositor/alta-compo
     FichaCancionComponent,
     FichaCompositorComponent,
     AltaInterpreteComponent,
-    AltaCompositorComponent
+    AltaCompositorComponent,
+    AltaGeneroComponent
   ],
   imports: [
     AppRoutingModule,
