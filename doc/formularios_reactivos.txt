@@ -1,0 +1,12 @@
+FORMULARIOS REACTIVOS
+=====================
+
+1.- Para poder disfrutar de ellos hay que añadir un módulo en el módulo principal.
+
+Este módulo se llama: ReactiveFormsModule
+
+2.- En el componente donde nos interese utilizar un formulario reactivo tendremos
+que inyectar un "aparato" especial para crear formularios reactivos.
+
+A estas alturas no debería asustarnos el término "inyección". Ya sabemos que esto se
+hace a través del constructor.

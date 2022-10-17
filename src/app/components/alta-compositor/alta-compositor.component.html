@@ -1,0 +1,35 @@
+<h2>Alta de Compositor</h2>
+<form [formGroup]="formulario">
+    <table>
+        <tr>
+            <th>Código</th>
+            <td><input type="number" formControlName="codigo"/></td>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <td><input type="text" formControlName="nombre"/></td>
+        </tr>
+        <tr>
+            <th>Apellidos</th>
+            <td><input type="text" formControlName="apellidos"/></td>
+        </tr>
+        <tr>
+            <th>Nacionalidad</th>
+            <td><input type="text" formControlName="nacionalidad"/></td>
+        </tr>
+        <tr>
+            <th>Fecha de Nacimiento</th>
+            <td><input type="date" formControlName="fechaNacimiento"/></td>
+        </tr>
+        <tr>
+            <th>Fecha de Defunción</th>
+            <td><input type="date" formControlName="fechaDefuncion"/></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button [disabled]="!formulario.valid"  disabled (click)="crear()">CREAR</button></td>
+        </tr>
+    </table>
+</form>
+
+

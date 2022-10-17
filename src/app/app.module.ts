@@ -3,7 +3,7 @@ import { NgModule }                     from '@angular/core';
 import { BrowserModule }                from '@angular/platform-browser';
 import { HttpClientModule }             from '@angular/common/http';
 import { AppRoutingModule }             from './app-routing.module';
-import { FormsModule }                  from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }                  from '@angular/forms';
 
 import { AppComponent }                 from './app.component';
 import { ListadoGenerosComponent }      from './components/listado-generos/listado-generos.component';
@@ -14,6 +14,7 @@ import { ListadoCancionesComponent }    from './components/listado-canciones/lis
 import { FichaCancionComponent }        from './components/ficha-cancion/ficha-cancion.component';
 import { FichaCompositorComponent }     from './components/ficha-compositor/ficha-compositor.component';
 import { AltaInterpreteComponent }      from './components/alta-interprete/alta-interprete.component';
+import { AltaCompositorComponent } from './components/alta-compositor/alta-compositor.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,15 @@ import { AltaInterpreteComponent }      from './components/alta-interprete/alta-
     ListadoCancionesComponent,
     FichaCancionComponent,
     FichaCompositorComponent,
-    AltaInterpreteComponent
+    AltaInterpreteComponent,
+    AltaCompositorComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
-    
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

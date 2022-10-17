@@ -20,4 +20,8 @@ export class CompositorService {
     return this.httpClient.get<Compositor>(URL + "/compositores/" + codigo);
   }
 
+  crear(compositor:Compositor){
+    return this.httpClient.post<Compositor>(URL + "/compositores", compositor);
+  }
+
 }
