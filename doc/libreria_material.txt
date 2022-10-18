@@ -1,0 +1,18 @@
+Librería Material
+=================
+
+Toda la documentación se encuentra:
+
+https://material.angular.io/
+
+Este es el sitio donde hemos de acudir siempre en primera instancia. Si no solucionamos el problema, obviamente googleams....
+
+En este sitio se explica perfectamente el proceso de instalación de la librería...
+
+Instalación
+===========
+
+Seguimos los pasos del GettingStarter pero... OJO! Por un tema de organización en nuestro proyecto
+vamos a tener que crear un módulo nuevo, específico para los módulos de material...
+
+
