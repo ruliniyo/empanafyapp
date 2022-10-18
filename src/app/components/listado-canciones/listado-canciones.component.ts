@@ -12,11 +12,14 @@ import { CancionService } from 'src/app/services/cancion.service';
 export class ListadoCancionesComponent implements OnInit {
 
   canciones:Cancion[] = undefined;
+  columnasAPintar:string[];
 
   constructor(private cancionService: CancionService,
               private router: Router) { }
 
   ngOnInit() {
+
+    this.columnasAPintar = ['col_1','col_2','col_5','col_6','col_3','col_7','col_4'];
 
     this.cancionService.getAll().subscribe(data => {
       this.canciones = data;
