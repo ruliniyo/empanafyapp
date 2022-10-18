@@ -18,13 +18,10 @@
 
   <ng-container matColumnDef="col_4">
     <th mat-header-cell *matHeaderCellDef></th>
-    
-        
     <td mat-cell *matCellDef="let genero"><mat-icon (click)="mostrarFila(genero)">open_in_new</mat-icon></td>
   </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="columnasAPintar"></tr>
-  <tr mat-row *matRowDef="let row; columns: columnasAPintar;"></tr>
-
+  <tr mat-header-row *matHeaderRowDef="columnasAPintar"></tr>          <!--NECESARIO PARA VER CABECERAS DE TABLA-->
+  <tr mat-row *matRowDef="let row; columns: columnasAPintar;"></tr>    <!--NECESARIO PARA VER CONTENIDOS DE TABLA-->
 </table>
 
